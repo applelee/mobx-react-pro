@@ -14,6 +14,8 @@ gulp.task('dev_browserify',() => {
     .bundle()
     .on('error',(err) => {
       console.log(err.message)
+      console.log(err.codeFrame)
+      console.log(err.loc)
     })
     .pipe(source('app.js'))
     // .pipe(buffer())
@@ -26,6 +28,11 @@ gulp.task('pro_browserify',() => {
   browserify('./src/index.js',{debug:true})
     .transform(babelify)
     .bundle()
+    .on('error',(err) => {
+      console.log(err.message)
+      console.log(err.codeFrame)
+      console.log(err.loc)
+    })
     .pipe(source('app.js'))
     .pipe(buffer())
     .pipe(uglify())
