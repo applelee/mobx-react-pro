@@ -12,6 +12,9 @@ gulp.task('dev_browserify',() => {
   browserify('./src/index.js',{debug:true})
     .transform(babelify)
     .bundle()
+    .on('error',(err) => {
+      console.log(err.message)
+    })
     .pipe(source('app.js'))
     // .pipe(buffer())
     // .pipe(uglify())
