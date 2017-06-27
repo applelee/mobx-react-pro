@@ -1,4 +1,4 @@
-import testMobx from './testMobx'
+import testMobx from './TestMobx'
 
 export default {
   testMobx,

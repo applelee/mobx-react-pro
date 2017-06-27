@@ -1,1 +1,112 @@
-*{font-family:'微软雅黑';}
+* {
+  outline: none;
+  font-family: "微软雅黑";
+  box-sizing: border-box;
+}
+body,
+div,
+ul,
+dl,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dt,
+dd,
+img,
+a,
+span,
+p,
+table,
+td,
+i,
+input,
+button,
+textarea,
+form {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+ul,
+li,
+dl,
+dt,
+dd,
+ol {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-size: 16px;
+  color: #333;
+}
+a,
+span,
+p,
+font,
+b,
+i,
+strong {
+  font-size: 12px;
+}
+i {
+  font-style: normal;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0px;
+}
+.nav {
+  clear: both;
+  height: 40px;
+  background-color: #eee;
+}
+.nav li {
+  float: left;
+  padding: 0 20px;
+  height: 100%;
+}
+.nav a {
+  font-size: 18px;
+  color: red;
+  display: block;
+  line-height: 40px;
+}
+.header {
+  height: 80px;
+  background-color: #888999;
+  text-align: center;
+  line-height: 80px;
+}
+.footer {
+  height: 80px;
+  background-color: #999888;
+  text-align: center;
+  line-height: 80px;
+}
+.button {
+  padding: 10px 30px;
+  cursor: pointer;
+  background-color: #464646;
+  display: inline-block;
+  color: white;
+}
